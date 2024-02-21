@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>
+            PORTFOLIO-AVENA
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <Body>
+        <section class="header">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS & COURSES</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+<!------------skills----------------->
+<div id="skills">
+    <div class="container">
+        <h1 class="subtitle">Skills & Courses</h1>
+        <div class="skill-list">
+            <div>
+                <h2>
+                    Technical skills
+                </h2>
+                <p>
+                    C<br>C++<br>Python<br>Computer Vision<br>Data Analysis
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Soft skills
+                </h2>
+                <p>
+                    Leadership<br>Problem Solving<br>Adaptability<br>Public Speaking<br>Time Management
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Courses
+                </h2>
+                <p>
+                    Advanced Machine Learning &Signal Processing<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                 for(tablink of tablinks){
+                     tablink.classlist.remove("active-link");
+                 }  
+                 for(tabcontent of tabcontents){
+                    tabcontent.classlist.remove("active-tab");
+                 } 
+                
+            
+            }
+    
+            
+        </script>
+
+        </section>
+
+
+
+
+    
+
+
+
+
+
+    </Body>
+</html>

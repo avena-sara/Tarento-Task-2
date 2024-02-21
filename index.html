@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>
+            PORTFOLIO-AVENA
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <Body>
+        <section class="header">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="skills.html">SKILLS & COURSES</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        <div class="text-box">
+            <h1>
+                AVENA SARA SAJI
+            </h1>
+            <p>
+                Electronics And Communication engineering
+            </p>
+        </div>   
+
+
+        </section>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx1uLpv-foWgBIQmxhjGWU_j04JnlWOJOCM612BvCFS0fGmdHI9giF6pt1hGURa7hlK/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+
+
+
+
+
+
+
+
+    </Body>
+</html>
